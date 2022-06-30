@@ -7,6 +7,8 @@ convert = owofy . excl
     owofy s =
       let repl 'r' = 'w'
           repl 'l' = 'w'
+          repl 'R' = 'W'
+          repl 'L' = 'W'
           repl c = c
        in map repl s
 
