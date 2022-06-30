@@ -1,12 +1,7 @@
 module Main where
 
-import Control.Monad (forever)
 import Converter (convert)
 import Options.Applicative
-
-
-conIO :: String -> IO String
-conIO = return . convert
 
 newtype Args = Args {s :: String}
 
